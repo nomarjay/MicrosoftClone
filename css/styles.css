@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+
+}
+
+.indent{
+    padding: 1% 5%;
+}
+
+.container{
+    margin: auto auto;
+    width: 100;
+    overflow-x: hidden;
+
+}
+
+:root{
+    --blue:rgb(72, 128, 232);
+}
+
+button{
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 20px;
+    background-color: var(--blue);
+    color: whitesmoke;
+    width: fit-content;
+    cursor: pointer;
+}
+
+/* icons */
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px 0;
+}
+
+.icons > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+ion-icon{
+    font-size: 40px;
+    color:black;
+    cursor: pointer;
+}
+
+.icons a{
+    font-size: smaller;
+    font-weight: 600;
+    text-decoration: underline;
+    color:var(--blue)
+}
+
+
+
+/* nav */
+nav{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-flex{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 75px;
+
+}
+
+
+nav img{
+    width: 140px;
+}
+
+nav ion-icon{
+    font-size: 20px;
+}
+
+#chevron-down{
+font-size: small
+}
+
+
+
+/* banners */
+
+.hero, 
+.hero2,
+.hero3 {
+    width: 100%;
+    height: 40vh;
+    background-image: url('/assets/surface-cLTHKmQS0zI-unsplash.jpg');
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.hero2{
+    background-image: url('/assets/pexels-thisisengineering-3861969.jpg');
+}
+
+.hero3{
+    background-image: url('/assets/teddy-o-owiVf9bFKHM-unsplash.jpg');
+}
+
+.banner{
+    height: 300px;
+    width:550px;
+    background-color: rgb(253, 254, 255);
+    line-height:1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 30px;
+
+}
+
+.banner > *{
+    
+}
+
+
+
+
+
+
+/* cards */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly
+    
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    gap:10px;
+
+}
+
+.card img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.cards button{
+    padding:5px 10px;
+    border-radius: 10px;
+    color:whitesmoke;
+    font-weight: bolder;
+
+}
+
+/* social */
+.social{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social span{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: small;
+    background-color: lightgrey;
+}
+
+footer>div{
+
+    width:calc(100%/6);
+    height: max-content;
+    padding:40px;
+}
