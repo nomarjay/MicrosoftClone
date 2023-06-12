@@ -15,3 +15,35 @@ for (let i = 0; i < children.length; i++) {
   }
 }
 
+
+// lazy load images
+document.addEventListener('DOMContentLoaded', function() {
+  var lazyImages = document.querySelectorAll('.lazy-load');
+
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.removeAttribute('data-src');
+          lazyImage.classList.remove('lazy-load');
+          observer.unobserve(lazyImage);
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      observer.observe(lazyImage);
+    });
+  } else {
+    // Fallback for browsers that do not support Intersection Observer
+    // You can load all images immediately if needed
+    lazyImages.forEach(function(lazyImage) {
+      lazyImage.src = lazyImage.dataset.src;
+      lazyImage.removeAttribute('data-src');
+      lazyImage.classList.remove('lazy-load');
+    });
+  }
+});
+

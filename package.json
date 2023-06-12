@@ -1,0 +1,21 @@
+{
+  "name": "microsoft-clone",
+  "version": "1.0.0",
+  "description": "clone of the current microsoft web page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "MicrosoftClone"
+  },
+  "keywords": [
+    "microsoft"
+  ],
+  "author": "Jordan King",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.0"
+  }
+}

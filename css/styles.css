@@ -43,6 +43,23 @@ button{
     cursor: pointer;
 }
 
+
+.blurry-image {
+    filter: blur(8px);
+    transition: filter 0.5s ease-in-out;
+  }
+  
+.lazy-load {
+opacity: 0;
+}
+
+.blurry-image:not(.lazy-load) {
+filter: none;
+opacity: 1;
+}
+
+
+
 /* icons */
 .icons{
     display: flex;
@@ -115,7 +132,7 @@ font-size: small
 .hero3 {
     width: 100%;
     height: 40vh;
-    background-image: url('/assets/surface-cLTHKmQS0zI-unsplash.jpg');
+    background-image: url('https://github.com/nomarjay/MicrosoftClone/blob/main/assets/surface-cLTHKmQS0zI-unsplash.jpg?raw=t');
     background-size:cover;
     background-position: center;
     display: flex;
@@ -124,11 +141,11 @@ font-size: small
 }
 
 .hero2{
-    background-image: url('/assets/pexels-thisisengineering-3861969.jpg');
+    background-image: url('https://github.com/nomarjay/MicrosoftClone/blob/main/assets/pexels-thisisengineering-3861969.jpg?raw=true');
 }
 
 .hero3{
-    background-image: url('/assets/teddy-o-owiVf9bFKHM-unsplash.jpg');
+    background-image: url('https://github.com/nomarjay/MicrosoftClone/blob/main/assets/teddy-o-owiVf9bFKHM-unsplash.jpg?raw=true');
 }
 
 .banner{
