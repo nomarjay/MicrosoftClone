@@ -1,2 +1,2 @@
 # MicrosoftClone
-A clone of the microsoft webssite
+A clone of the microsoft website
