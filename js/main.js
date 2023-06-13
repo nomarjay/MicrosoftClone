@@ -1,4 +1,4 @@
-$(document).ready(function() {
+
 
   // indent section
   const container = document.querySelector('.container');
@@ -52,5 +52,3 @@ $(document).ready(function() {
       $('.menu').slideToggle();
     });
   });
-
-})
