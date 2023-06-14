@@ -46,9 +46,24 @@
   });
 
 
-  // hamburger menu
-  $(document).ready(function() {
-    $('.hamburger').click(function() {
-      $('.menu').slideToggle();
-    });
+  window.addEventListener('resize', function() {
+    var navFlexElements = document.getElementsByClassName('nav-flex');
+    var screenWidth = window.innerWidth;
+  
+    if (screenWidth < 1200) {
+      for (var i = 0; i < navFlexElements.length; i++) {
+        var navFlexElement = navFlexElements[i];
+        var navParent = navFlexElement.parentNode;
+        var children = navFlexElement.childNodes;
+  
+        for (var j = children.length - 1; j >= 0; j--) {
+          navParent.insertBefore(children[j], navFlexElement.nextSibling);
+        }
+  
+        navParent.removeChild(navFlexElement);
+      }
+    } else {
+      // If the screen size is 1200px or larger, no action is needed
+    }
   });
+  

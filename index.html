@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microsoft Clone</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles-tablet.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="/js/main.js" defer></script>  
 </head>
 <body>
     <div class="container">
+
+        <ion-icon id="menu" name="grid-outline"></ion-icon>
+
         <nav>
             <div class="nav-flex">
                 <img class="blurry-image lazy-load" data-src="https://github.com/nomarjay/MicrosoftClone/blob/main/assets/microsoft.png?raw=true">
@@ -33,7 +37,7 @@
 
         </nav>
 
-        <div class="hero">
+        <div class="hero" id="top">
             <div class="banner">
                 <h2>Save up to $299 on Surface Pro 9</h2>
                 <p>The tablet flexbility you want and the laptop performance you need -- all in one ultra-portable device.
@@ -44,30 +48,30 @@
             </div>
         </div>
 
-        <section class="icons">
+        <section class="icons mt">
             <div>
                 <ion-icon name="laptop-outline"></ion-icon>
-                <a href="#">Shop Surface Laptops</a>
+                <button>Shop Surface Laptops</button>
             </div>
             <div>
                 <ion-icon name="logo-windows"></ion-icon>
-                <a href="#">Choose your Microsoft 365</a>
+                <button>Choose your Microsoft 365</button>
             </div>
             <div>
                 <ion-icon name="logo-xbox"></ion-icon>
-                <a href="#">Buy Xbox games and consoles</a>
+                <button>Buy Xbox games and consoles</button>
             </div>
             <div>
                 <ion-icon name="logo-windows"></ion-icon>
-                <a href="#">Get Windows 11</a>
+                <button>Get Windows 11</button>
             </div>
             <div>
                 <ion-icon name="pricetag-outline"></ion-icon>
-                <a href="#">Shop Accessories</a>
+                <button>Shop Accessories</button>
             </div>
             <div>
                 <ion-icon name="bag-outline"></ion-icon>
-                <a href="#">Shop Business</a>
+                <button>Shop Business</button>
             </div>
 
         </section>
@@ -108,7 +112,7 @@
             </div>
         </div>
 
-        <section class="cards">
+        <section class="cards mt">
             <div class="card">
                 <img class="blurry-image lazy-load" data-src="https://github.com/nomarjay/MicrosoftClone/blob/main/assets/mika-baumeister--ik4J32DUyI-unsplash.jpg?raw=true" alt="">
                 <h2>Get Microsoft Teams for free</h2>
@@ -116,19 +120,13 @@
                 <button>Shop Now</button>
             </div>
             <div class="card">
-                <img class="blurry-image lazy-load" data-src="https://github.com/nomarjay/MicrosoftClone/blob/main/assets/zachary-fetters-y5G-f9qnUTc-unsplash.jpg?raw=true" alt="">
+                <img class="blurry-image lazy-load" data-src="https://github.com/nomarjay/MicrosoftClone/blob/main/assets/windows-139Uv2t0Ez0-unsplash.jpg?raw=true" alt="">
                 <h2>Windows 11 for business</h2>
                 <p>Designed for hybrid work. Powerful for employees. Consistent for IT. Secure for all.</p>
                 <button>Learn More</button>
             </div>
             <div class="card">
-                <img class="blurry-image lazy-load" data-src="https://github.com/nomarjay/MicrosoftClone/blob/main/assets/zachary-fetters-y5G-f9qnUTc-unsplash.jpg?raw=true" alt="">
-                <h2>Get the new Surface Laptop</h2>
-                <p>Online meetings, chat, and shared cloud storage—all in one place.</p>
-                <button>Sign up for free</button>
-            </div>
-            <div class="card">
-                <img class="blurry-image lazy-load" data-src="https://github.com/nomarjay/MicrosoftClone/blob/main/assets/ed-hardie-xG02JzIBf7o-unsplash.jpg?raw=true" alt="">
+                <img class="blurry-image lazy-load" data-src="https://github.com/nomarjay/MicrosoftClone/blob/main/assets/pexels-tara-winstead-8386440.jpg?raw=true" alt="">
                 <h2>Microsoft 365 Copilot</h2>
                 <p>Discover a new way to work with next-gen AI embedded in the Microsoft 365 apps you use every day. </p>
                 <button>Learn More</button>
@@ -151,7 +149,7 @@
             </div>
         </div>
 
-        <div class="social">
+        <div class="social mt">
             <span>
                 Follow Microsoft
                 <ion-icon name="logo-facebook"></ion-icon>
@@ -159,7 +157,7 @@
                 <ion-icon name="logo-linkedin"></ion-icon>
             </span>
             
-            <button>Back to top</button>
+            <button><a href="#top">Back to top</a></button>
 
         </div>
 
